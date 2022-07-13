@@ -1,0 +1,4 @@
+#!/gstore/home/rossc10/projects/deephlapan/myenv/bin/python
+# EASY-INSTALL-SCRIPT: 'deephlapan==1.1','deephlapan'
+__requires__ = 'deephlapan==1.1'
+__import__('pkg_resources').run_script('deephlapan==1.1', 'deephlapan')

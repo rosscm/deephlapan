@@ -1,0 +1,18 @@
+module purge
+ml ScaLAPACK/2.0.2-gompi-2017a-OpenBLAS-0.2.19-LAPACK-3.7.0
+ml cuDNN/7.0.5-CUDA-9.0.176
+
+# After installing miniconda3 via installer
+conda activate ~/miniconda3
+pip install virtualenv
+cd ~/projects/deephlapan
+python -m venv myenv
+source myenv/bin/activate
+export PYTHONPATH=~/projects/deephlapan/myenv/bin/python
+python -m pip install --upgrade pip
+pip install .
+
+
+
+# conda create -n py3.7 python=3.7
+# find . -name "*.pyc" -delete
